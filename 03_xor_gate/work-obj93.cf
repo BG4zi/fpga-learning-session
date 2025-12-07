@@ -1,0 +1,16 @@
+v 4
+file . "tb_top.vhd" "f0078b86dd517d45836ae6dd786028f069be8533" "20251207014932.727":
+  entity tb_top at 1( 0) + 0 on 19;
+  architecture sim of tb_top at 7( 74) + 0 on 20;
+file . "or_gate.vhd" "e82a53eedf6308a3f9b058e1705ba1c5de0a1571" "20251207014932.276":
+  entity or_gate at 1( 0) + 0 on 15;
+  architecture rtl of or_gate at 12( 157) + 0 on 16;
+file . "and_gate.vhd" "666036b11e78f5aa5219c428588df2c1d8c5829e" "20251207014931.872":
+  entity and_gate at 1( 0) + 0 on 11;
+  architecture rtl of and_gate at 12( 158) + 0 on 12;
+file . "not_gate.vhd" "59c9bb4af12f9bc41fa9511d8936e6025a54cad6" "20251207014932.073":
+  entity not_gate at 1( 0) + 0 on 13;
+  architecture rtl of not_gate at 11( 135) + 0 on 14;
+file . "xor_gate.vhd" "298462c696b4c1dd2501c1cb74909f670e6dc0db" "20251207014932.501":
+  entity xor_gate at 1( 0) + 0 on 17;
+  architecture structural of xor_gate at 12( 158) + 0 on 18;

@@ -1,0 +1,7 @@
+v 4
+file . "tb_top.vhd" "7d505fa12d5010ae36ad891b4ea531c8fdff89f5" "20251207012017.655":
+  entity tb_top at 1( 0) + 0 on 13;
+  architecture sim of tb_top at 7( 74) + 0 on 14;
+file . "or_gate.vhd" "e82a53eedf6308a3f9b058e1705ba1c5de0a1571" "20251207012017.641":
+  entity or_gate at 1( 0) + 0 on 11;
+  architecture rtl of or_gate at 12( 157) + 0 on 12;

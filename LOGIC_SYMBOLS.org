@@ -1,0 +1,80 @@
+#+title: Basic Logic Symbols
+#+author:
+#+options: toc:nil
+
+* Introduction
+This document explains the three fundamental operations of digital logic:
+NOT, AND, and OR.
+
+These operations appear everywhere in electronics, logic gates, FPGA design,
+and Boolean algebra.
+
+* NOT operation (¬)
+- Symbol: ¬
+- Meaning: logical negation
+- Description: Inverts the input signal.
+
+| a | ¬a |
+|---|----|
+| 0 |  1 |
+| 1 |  0 |
+
+Examples:
+- ¬1 = 0
+- ¬0 = 1
+
+In digital circuits: invert a signal.
+
+* AND operation (∧)
+- Symbol: ∧
+- Meaning: logical AND
+- Description: Output is *1* only when *both* inputs are 1.
+
+| a | b | a ∧ b |
+|---|---|--------|
+| 0 | 0 |   0    |
+| 0 | 1 |   0    |
+| 1 | 0 |   0    |
+| 1 | 1 |   1    |
+
+In hardware: both conditions must be true for the circuit to activate.
+
+* OR operation (∨)
+- Symbol: ∨
+- Meaning: logical OR
+- Description: Output is 1 if *at least one* input is 1.
+
+| a | b | a ∨ b |
+|---|---|--------|
+| 0 | 0 |   0    |
+| 0 | 1 |   1    |
+| 1 | 0 |   1    |
+| 1 | 1 |   1    |
+
+In hardware: any active input triggers the output.
+
+* XOR operation (exclusive OR)
+XOR outputs 1 when *the inputs are different*.
+
+Equivalent Boolean expressions:
+
+1) ¬(a ∧ b) ∧ (a ∨ b)
+2) (a ∧ ¬b) ∨ (¬a ∧ b)
+
+Truth table:
+
+| a | b | XOR(a,b) |
+|---|---|-----------|
+| 0 | 0 |     0     |
+| 0 | 1 |     1     |
+| 1 | 0 |     1     |
+| 1 | 1 |     0     |
+
+* Summary
+- ¬   → NOT → inverts the input
+- ∧   → AND → 1 only if both inputs are 1
+- ∨   → OR  → 1 if at least one input is 1
+- XOR → 1 when inputs differ
+
+These symbols form the foundation of digital logic and are essential in FPGA,
+CPU design, and Boolean algebra.
